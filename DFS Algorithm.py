@@ -1,17 +1,8 @@
 from collections import defaultdict
 
-# Define regions and their islands
-regions = {
-    "Region 1": ['A', 'B', 'C', 'D'],
-    "Region 2": ['E', 'F', 'G'],
-    "Region 3": ['H', 'I', 'J']
-}
-
 # Define the bridges (edges) within each region
 bridges = {
-    "Region 1": [('A', 'B'), ('A', 'C'), ('B', 'D'), ('C', 'D')],
-    "Region 2": [('E', 'F'), ('F', 'G')],
-    "Region 3": [('H', 'I'), ('I', 'J')]
+    "Region 1": [('A', 'B'), ('A', 'C'), ('B', 'D'), ('C', 'D'), ('D', 'E'), ('F', 'G'), ('H', 'I'), ('I', 'J')]
 }
 
 # Build adjacency list graph from the bridge connections
